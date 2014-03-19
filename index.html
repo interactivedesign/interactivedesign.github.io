@@ -1,55 +1,290 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo - How to create a parallax scrolling website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <title>Interactive Design staging site for template prototypes by interactivedesign</title>
-  </head>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <style type="text/css">
+			body {
+				font-family: 'Open Sans', sans-serif;
+			}
+		</style>
+		<style type="text/css">
+			.back-link a {
+				color: #4ca340;
+				text-decoration: none; 
+				border-bottom: 1px #4ca340 solid;
+			}
+			.back-link a:hover,
+			.back-link a:focus {
+				color: #408536; 
+				text-decoration: none;
+				border-bottom: 1px #408536 solid;
+			}
+			h1 {
+				height: 100%;
+				/* The html and body elements cannot have any padding or margin. */
+				margin: 0;
+				font-size: 14px;
+				font-family: 'Open Sans', serif;
+				color: #1c1d1e;
+				font-size: 32px;
+				margin-bottom: 3px;
+			}
+			h2 {
+				color: #1c1d1e;
+				font-family: 'Garamond', sans-serif;
+				font-weight: normal;
+			}
+			.entry-header .inner {
+				text-align: left;
+				margin: 0 auto 20px auto;
+				width: 800px;
+			}
+			
+		
+			.entry-header { /*padding-top: 20px; padding-bottom: 20px;*/ background-color: #fff; width:100%; position: fixed; top: 0; left: 0; z-index: 999999}
+			
+			.cta-wrap{
+			margin-top:10%;
+			}
+			.fixed-link {
+			float:right;
+			margin-right:10%;
+			}
+			.fixed-link li{
+				float:left;
+				display:inline;
+				padding-left:2%;
+				
+				
+			}
+			.fixed-page-link{
+			margin-top:-65px;
+			width:80%;
+			
+			}
+			.fixed-page-link li{
+			float:left;
+			display:inline-block;
+			padding-left:5%;
+			
+			}
+			.fixed-page-link li a{
+			width:100%;
+			}
+			
+			
+			body > header > div > nav {
+			float:right;
+			}
+			body > header > div.inner > h1 {
+			font-size:46px;
+			}
+			#slide-1 > div > div > div > h2 {
+			background: darkgrey;
+			padding: 1%;
+			margin: auto;
+			width: 50%;
+			}
+			
+			.wow{
+			color:white !important;
+			background: black;
+			padding: 2%;
+			width:65%;
+			margin-left:auto;
+			margin-right:auto;
+			}
+			
+			
+			.bold-bg{
+			background: black;
+			padding: 2%;
+			}
+			.brand{
+			float:left;
+			width25%;
+			}
+			.brand img{
+			width:100%;
+			}
+			.color-pop{
+			color:orange;
+			}
+			html, button, input, select, textarea {
+font-family: georgia;
+}
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Interactive Design staging site for template prototypes</h1>
-        <h2>Teen Journey is Number 1</h2>
-        <a href="https://github.com/interactivedesign" class="button"><small>Follow me on</small>GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-our-github-page" class="anchor" href="#welcome-to-our-github-page"><span class="octicon octicon-link"></span></a>Welcome to Our GitHub Page.</h3>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-        </section>
-
-        <aside id="sidebar">
-
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+			.foot-block{
+			width:25%;
+			float:left;
+			
+			}
+		</style>
+    </head>
+    <body class="loading">
+            <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+       	
+       	<header class="entry-header">
+       		<div class="brand">
+       		<img src="img/tj-logo.png"/>
+       		</div>
+       			<nav class="fixed-link">
+					<li><a href="#slide-1">link 1</a></li>
+					<li><a href="#slide-1">link 1</a></li>
+					<li><a href="#slide-5">link 1</a></li>
+				</nav><!-- .nav-single -->
+        	<div class="inner">
+				
+				<h1 class="entry-title">Welcome To Teen Journey</h1>
+			<!--	Dissapering slogan and short nav-->
+				<h2 data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2"><span class="color-pop">|</span> Rites of Passage, A Positive paradigm shift for teens <span class="color-pop">|</span></h2>
+				<div class="ajax-menu">
+				<nav class="fixed-page-link" data-bottom="opacity: 0" data-top="opacity: 1" data-anchor-target="#slide-2 h2">
+					<li><a href="#slide-1">Home</a></li>
+					<li><a href="#slide-2">link 1</a></li>
+					<li><a href="#slide-3">link 1</a></li>
+					<li><a href="#slide-4">link 1</a></li>
+					<li><a href="#slide-5">link 1</a></li>
+				</nav><!-- .navpage links for scrolling -->
+			</div>
+			</div>
+				
+			
+			
+		</header>
+    
+       	<main>
+       	 
+	        <section id="slide-1" class="homeSlide">
+	        	<div class="bcg" data-center="background-position: 50% 50px; " data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+		        	<div class="hsContainer">
+			    		<div class="hsContent cta-wrap" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+				    		<h2>a global community that connects young people</h2>
+				    		<p class="wow">At Teen Journey we team up with renowned local and international leaders, mentors and facilitators. These highly qualified, dynamic people are committed to their own and to the teens’ unfolding. Chosen precisely because they “walk their talk,” </p>
+			    		</div>
+		        	</div>
+	        	</div>
+		    </section>
+		    
+		    
+		    <section id="slide-2">
+		    	<div class="bcg"  data-0="background-color:rgb(1,27,59);" data-center="background-position: 50% 50px; data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Request Detailed Information About Teen Journey</h2>
+				    		<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Here we are changing the background color from blue to black. Text is fading in at 206 pixels from the bottom and fading out 106 pixels from the top.</p>
+			    		</div>
+		        	</div>
+		    	</div>
+		    </section>
+<section id="slide-3" class="homeSlide">
+	<div class="bcg" data-center="background-position: 0px 50%;" data-bottom-top="background-position: 0px 40%;" data-top-bottom="background-position: -40px 50%;" data-anchor-target="#slide-3">
+    	<div class="hsContainer">
+    		<div class="hsContent">
+    			<div class="plaxEl" data-106-top="opacity: 0" data--30p-top="opacity: 1;" data--60p-top="opacity: 0;" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data-anchor-target="#slide-3">
+		    		<h2>Build a roadmap for your future</h2>
+		    		<p><span class="bgBlack">Teen Journey is a transformational program for youth in search of inner guidance. Led by local and international leaders in the fields of arts, science, and personal development, Teen Journey participants learn the value of self-inquiry as a means to change themselves and the world around them. </span></p>
+		    		<p><span class="bgBlack">Or did you think that the scooter is driving off?</span></p>
+	    		</div>
+    		</div>
+    	</div>
+    	
     </div>
+</section>
+		    
+		<section id="slide-4" class="homeSlide homeSlideTall">
+			<div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4">
+				<div class="curtainContainer">
+		
+					<div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
+					<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4 .copy">
+						<h2>Teen Journey – A Journey like no other!</h2>
+						<p class="wow"><span>Teen Journey is a Vancouver. B.C. based non-profit organization created to empower youth with a vision of interconnectedness, as members of a global village that live from the heart with passion and purpose. Founded on the established research and time-tested practices blending indigenous wisdom with the human potential movement, Teen Journey is a transformational program for youth in search of inner guidance. Led by local and international leaders in the fields of arts, science, and personal development, Teen Journey participants learn the value of self-inquiry as a means to change themselves and the world around them.</span></p>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section id="slide-4a" class="homeSlide homeSlide">
+			<div class="bcg" data-center="background-position: 50% 0px;" data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-4a">
+				<div class="curtainContainer">
+					<div class="hsContent" data-center="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-1 h2">
+				    		<h2>Fade out elements before<br />they leave viewport</h2>
+				    		<p class="wow">This slide moves background image at a slower speed then the page scroll. Text is fading out to opacity 0 at 106 pixels from the top.</p>
+			    	</div>
+					<div class="curtain" data-bottom-top="opacity: 0" data-106-top="height: 1%; opacity: 0; top: -10%;" data-center="height: 100%; opacity: 0.5; top: 0%;" data-anchor-target="#slide-4"></div>
+					<div class="copy" data-bottom-top="opacity: 0" data--100-bottom="opacity: 0" data--280-bottom="opacity: 1;" data-280-top="opacity: 1;" data-106-top="opacity: 0;" data-anchor-target="#slide-4a .copy">
+						<h2>Brighten up Your Life</h2>
+						<h4>See the world fully illuminated and clearly </h4>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section id="slide-5a">
+		    	<div class="bcg" data-0="background-color:rgb(1,27,59);" data-top="background-color:(0,0,0);"  data-anchor-target="#slide-2">
+			    	<div class="hsContainer">
+			    		<div class="hsContent">
+				    		<h2 data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Request Detailed Information About Teen Journey</h2>
+				    		<p data-center="opacity: 1" data--200-bottom="opacity: 0" data-206-top="opacity: 1" data-106-top="opacity: 0" data-anchor-target="#slide-2 h2">Here we are changing the background color from blue to black. Text is fading in at 206 pixels from the bottom and fading out 106 pixels from the top.</p>
+			    		</div>
+		        	</div>
+		    	</div>
+		    </section>
+		    
+		    <section id="slide-5" class="homeSlide homeSlideTall2">
+		    	<div class="bcg">
+			    	&nbsp;
+		    	</div>
+		    	<div class="bcg bcg2" data-bottom-top="opacity: 0;" data--33p-top="opacity: 0;" data--66p-top="opacity: 1;" data-anchor-target="#slide-5">
+			    	<div class="hsContainer">
+				    	<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-5">
+				    		<article class="bold-bg">
+				    		<h2>Get Clarity in your life</h2>
+				    		<p>Teen Journey is a transformational, experiential program for youth aged 13 – 19 in search of truth, freedom and the power of inner guidance. Indigenous wisdom meets the human potential movement in Teen Journey – a unique, experiential and transformational program for youth to develop their personal power and leadership potential.</p>
+			    			</article>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="bcg bcg3" data-300-bottom="opacity: 0;" data-100-bottom="opacity: 1;" data-anchor-target="#slide-5">
+			    	<div class="hsContainer">
+				    	<div class="hsContent" data-100-bottom="opacity: 0;" data-bottom="opacity: 1;" data-anchor-target="#slide-5">
+				    		<h2>The End</h2>
+				    		<p>The people of Teen Journey have united around a purpose. Every mentor, leader and volunteer has come together around a common cause: to be in service to youth. The underlying purpose and vision of Teen Journey constantly attracts new and remarkable people …
+and we would like you to be one of them.<a href="#" target="_blank">teenjourney email</a>.</p>
+							
 
-  
-  </body>
+			    		</div>
+			    	</div>
+		    	</div>
+		    </section>
+		    
+		</main>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/skrollr.js"></script>
+        <!--[if lt IE 9]>
+		<script type="text/javascript" src="js/skrollr.ie.min.js"></script>
+		<![endif]-->
+        <script src="js/_main.js"></script>
+		<script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    </body>
 </html>

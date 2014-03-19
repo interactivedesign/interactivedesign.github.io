@@ -147,7 +147,9 @@ main {
 	width: 100%;
 }
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-1 .bcg {background-image:url('../img/bcg_slide-1.JPG')}
+/* needed .JPG because of github makeing changes... to be fixed*/
+
 
 /* Slide 2 */
 #slide-2 .bcg {background: none; background-color: #010101; height: 310px; text-align: center}
@@ -164,12 +166,15 @@ main {
 #slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
 
 /* Slide 4a */
-#slide-4a .bcg {background-image:url('../img/bcg_slide-5.jpg')}
+#slide-4a .bcg {background-image:url('../img/bcg_slide-5.JPG')}
+/* needed .JPG because of github makeing changes... to be fixed*/
 
 /* Slide 5 */
 #slide-5,  {position: relative;}
-#slide-5 .bcg, #slide-5a .bcg {background-image:url('../img/bcg_slide-5.jpg')}
-#slide-5 .bcg2 {background-image:url('../img/bcg_slide-5.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
+#slide-5 .bcg, #slide-5a .bcg {background-image:url('../img/bcg_slide-5.JPG')}
+/* needed .JPG because of github makeing changes... to be fixed*/
+#slide-5 .bcg2 {background-image:url('../img/bcg_slide-5.JPG'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
+/* needed .JPG because of github makeing changes... to be fixed*/
 #slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2}
 
 .hsContainer {
